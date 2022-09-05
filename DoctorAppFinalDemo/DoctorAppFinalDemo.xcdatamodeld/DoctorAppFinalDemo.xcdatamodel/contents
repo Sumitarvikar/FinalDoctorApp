@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDClinicDetail" representedClassName="CDClinicDetail" syncable="YES">
+        <attribute name="allowThirdPartyAccess" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="blockConfirmedApt" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="blockConfirmedAptMinutes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="enableOnSearch" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isComplete" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="landline" optional="YES" attributeType="String"/>
+        <attribute name="mobile" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="printFooterHgt" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="printHeaderHgt" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="shareDrugsAcrossClinic" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="shareMedicalHistoryAcrossClinic" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sharePrescriptionAcrossClinic" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Login" representedClassName=".Login" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <entity name="LoginData" representedClassName=".LoginData" syncable="YES">
+        <attribute name="apiKey" optional="YES" attributeType="String"/>
+        <attribute name="authToken" optional="YES" attributeType="String"/>
+        <attribute name="cityOfPractice" optional="YES" attributeType="String"/>
+        <attribute name="clinicExist" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="String"/>
+        <attribute name="dob" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="incompleteClinic" optional="YES" attributeType="Transformable"/>
+        <attribute name="mobile" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notificationToken" optional="YES" attributeType="String"/>
+        <attribute name="osType" optional="YES" attributeType="String"/>
+        <attribute name="passwordResetRequired" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="permissions" optional="YES" attributeType="Transformable"/>
+        <attribute name="preferredlanguages" optional="YES" attributeType="Transformable"/>
+        <attribute name="profileComplete" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="profileImage" optional="YES" attributeType="String"/>
+        <attribute name="resource" optional="YES" attributeType="Transformable"/>
+        <attribute name="resourceId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="resourceType" optional="YES" attributeType="String"/>
+        <attribute name="rolename" optional="YES" attributeType="String"/>
+        <attribute name="signInCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="termsAndConditions" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="LoginData" positionX="-63" positionY="-18" width="128" height="419"/>
+        <element name="CDClinicDetail" positionX="-54" positionY="153" width="128" height="269"/>
+        <element name="Login" positionX="-36" positionY="162" width="128" height="44"/>
+    </elements>
+</model>
