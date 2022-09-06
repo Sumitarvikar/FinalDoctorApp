@@ -8,20 +8,18 @@
 import Foundation
 
 struct HomeViewModel{
-func getClinicListRecord( completionHandler:@escaping(_ result: Array<ClinicDetail>?)-> Void) {
+func getClinicListRecord( completionHandler:@escaping(_ result: [ClinicDetail]?)-> Void) {
     
-    
-//    clinicListCoreSataManager().getClinicListRecords { response in
-//        if(response != nil && response?.count != 0){
-//            // return response to the view controller
-//            completionHandler(response)
-//        }else {
-    
-    
-    
-        DataServiceManager.shared.getclinicdetails(){
-            (response) in
-            completionHandler(response as? Array<ClinicDetail>)
+    clinicListCoreSataManager().getClinicListRecords { response in
+        if ( response != nil && response?.count != 0){
+            completionHandler(response)
+        }
+    }
+    DataServiceManager.shared.getclinicdetails(){
+            response in
+            completionHandler(response)
+            
+        clinicListCoreSataManager().insertClinicListRecords(records: response!)
             }
     }
 }

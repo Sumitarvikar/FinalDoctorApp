@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0397577728C6EFBA0081CA56 /* LoginViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0397577628C6EFBA0081CA56 /* LoginViewControllerExtension.swift */; };
 		03E1893928C4E3BE006E0732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1893828C4E3BE006E0732 /* AppDelegate.swift */; };
 		03E1893B28C4E3BE006E0732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1893A28C4E3BE006E0732 /* SceneDelegate.swift */; };
 		03E1893D28C4E3BE006E0732 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1893C28C4E3BE006E0732 /* LoginViewController.swift */; };
@@ -28,16 +29,15 @@
 		03E1897428C4FDA5006E0732 /* LoginValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1897328C4FDA5006E0732 /* LoginValidation.swift */; };
 		03E1897628C4FDCF006E0732 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1897528C4FDCF006E0732 /* ValidationResult.swift */; };
 		03E1897828C4FEA6006E0732 /* ClinicListCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1897728C4FEA6006E0732 /* ClinicListCoreDataManager.swift */; };
-		03E1897B28C4FFC7006E0732 /* LoginData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1897928C4FFC7006E0732 /* LoginData+CoreDataClass.swift */; };
-		03E1897C28C4FFC7006E0732 /* LoginData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1897A28C4FFC7006E0732 /* LoginData+CoreDataProperties.swift */; };
 		03E1897E28C50035006E0732 /* ClinicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1897D28C50035006E0732 /* ClinicResponse.swift */; };
 		03E1898128C50455006E0732 /* CDClinicDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1897F28C50455006E0732 /* CDClinicDetail+CoreDataClass.swift */; };
 		03E1898228C50455006E0732 /* CDClinicDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1898028C50455006E0732 /* CDClinicDetail+CoreDataProperties.swift */; };
-		03E1898528C50F61006E0732 /* Login+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1898328C50F61006E0732 /* Login+CoreDataClass.swift */; };
-		03E1898628C50F61006E0732 /* Login+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1898428C50F61006E0732 /* Login+CoreDataProperties.swift */; };
+		03E1898828C5CED1006E0732 /* CDClinicDetailEctension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1898728C5CED1006E0732 /* CDClinicDetailEctension .swift */; };
+		03E1898A28C613BF006E0732 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1898928C613BF006E0732 /* LoginResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0397577628C6EFBA0081CA56 /* LoginViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerExtension.swift; sourceTree = "<group>"; };
 		03E1893528C4E3BE006E0732 /* DoctorAppFinalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorAppFinalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E1893828C4E3BE006E0732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E1893A28C4E3BE006E0732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,13 +61,14 @@
 		03E1897328C4FDA5006E0732 /* LoginValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidation.swift; sourceTree = "<group>"; };
 		03E1897528C4FDCF006E0732 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		03E1897728C4FEA6006E0732 /* ClinicListCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListCoreDataManager.swift; sourceTree = "<group>"; };
-		03E1897928C4FFC7006E0732 /* LoginData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		03E1897A28C4FFC7006E0732 /* LoginData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		03E1897D28C50035006E0732 /* ClinicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicResponse.swift; sourceTree = "<group>"; };
 		03E1897F28C50455006E0732 /* CDClinicDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDClinicDetail+CoreDataClass.swift"; sourceTree = "<group>"; };
 		03E1898028C50455006E0732 /* CDClinicDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDClinicDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		03E1898328C50F61006E0732 /* Login+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataClass.swift"; sourceTree = "<group>"; };
-		03E1898428C50F61006E0732 /* Login+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03E1898728C5CED1006E0732 /* CDClinicDetailEctension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDClinicDetailEctension .swift"; sourceTree = "<group>"; };
+		03E1898928C613BF006E0732 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		4F00D4A696736F268A2A2F30 /* Pods-DoctorAppFinalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorAppFinalDemo.release.xcconfig"; path = "Target Support Files/Pods-DoctorAppFinalDemo/Pods-DoctorAppFinalDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AD94CCE8806DB4C57D680B08 /* Pods-DoctorAppFinalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorAppFinalDemo.debug.xcconfig"; path = "Target Support Files/Pods-DoctorAppFinalDemo/Pods-DoctorAppFinalDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EA08662CB226E560AE197052 /* Pods_DoctorAppFinalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorAppFinalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +82,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0397577828C6F03D0081CA56 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0397577628C6EFBA0081CA56 /* LoginViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0397577928C6F09F0081CA56 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		03E1892C28C4E3BE006E0732 = {
 			isa = PBXGroup;
 			children = (
-				03E1898328C50F61006E0732 /* Login+CoreDataClass.swift */,
-				03E1898428C50F61006E0732 /* Login+CoreDataProperties.swift */,
 				03E1893728C4E3BE006E0732 /* DoctorAppFinalDemo */,
 				03E1893628C4E3BE006E0732 /* Products */,
+				134C4BB20497B6F8ACC3FE22 /* Pods */,
+				A7573A590955EDC55FAB6B6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,8 +146,7 @@
 		03E1895028C4E3D0006E0732 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				03E1897928C4FFC7006E0732 /* LoginData+CoreDataClass.swift */,
-				03E1897A28C4FFC7006E0732 /* LoginData+CoreDataProperties.swift */,
+				03E1898928C613BF006E0732 /* LoginResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +162,7 @@
 		03E1895228C4E3E2006E0732 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0397577828C6F03D0081CA56 /* Extension */,
 				03E1893C28C4E3BE006E0732 /* LoginViewController.swift */,
 				03E1893E28C4E3BE006E0732 /* Main.storyboard */,
 			);
@@ -194,9 +210,11 @@
 		03E1896128C4E7B9006E0732 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0397577928C6F09F0081CA56 /* New Group */,
 				03E1897F28C50455006E0732 /* CDClinicDetail+CoreDataClass.swift */,
 				03E1898028C50455006E0732 /* CDClinicDetail+CoreDataProperties.swift */,
 				03E1897D28C50035006E0732 /* ClinicResponse.swift */,
+				03E1898728C5CED1006E0732 /* CDClinicDetailEctension .swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +255,23 @@
 			path = Validation;
 			sourceTree = "<group>";
 		};
+		134C4BB20497B6F8ACC3FE22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD94CCE8806DB4C57D680B08 /* Pods-DoctorAppFinalDemo.debug.xcconfig */,
+				4F00D4A696736F268A2A2F30 /* Pods-DoctorAppFinalDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7573A590955EDC55FAB6B6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA08662CB226E560AE197052 /* Pods_DoctorAppFinalDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03E1894C28C4E3BF006E0732 /* Build configuration list for PBXNativeTarget "DoctorAppFinalDemo" */;
 			buildPhases = (
+				21128F4D40CADACB27326308 /* [CP] Check Pods Manifest.lock */,
 				03E1893128C4E3BE006E0732 /* Sources */,
 				03E1893228C4E3BE006E0732 /* Frameworks */,
 				03E1893328C4E3BE006E0732 /* Resources */,
@@ -305,6 +341,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21128F4D40CADACB27326308 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoctorAppFinalDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03E1893128C4E3BE006E0732 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -313,7 +374,6 @@
 				03E1893D28C4E3BE006E0732 /* LoginViewController.swift in Sources */,
 				03E1896E28C4EB56006E0732 /* DataServiceManager.swift in Sources */,
 				03E1893928C4E3BE006E0732 /* AppDelegate.swift in Sources */,
-				03E1897C28C4FFC7006E0732 /* LoginData+CoreDataProperties.swift in Sources */,
 				03E1894328C4E3BE006E0732 /* DoctorAppFinalDemo.xcdatamodeld in Sources */,
 				03E1898128C50455006E0732 /* CDClinicDetail+CoreDataClass.swift in Sources */,
 				03E1896328C4E7F6006E0732 /* HomeViewModel.swift in Sources */,
@@ -321,17 +381,17 @@
 				03E1895928C4E5F7006E0732 /* HomeVCCell.swift in Sources */,
 				03E1897828C4FEA6006E0732 /* ClinicListCoreDataManager.swift in Sources */,
 				03E1896928C4EA7A006E0732 /* Extension.swift in Sources */,
+				03E1898A28C613BF006E0732 /* LoginResponse.swift in Sources */,
 				03E1895428C4E585006E0732 /* LoginViewModel.swift in Sources */,
 				03E1897628C4FDCF006E0732 /* ValidationResult.swift in Sources */,
-				03E1898628C50F61006E0732 /* Login+CoreDataProperties.swift in Sources */,
+				03E1898828C5CED1006E0732 /* CDClinicDetailEctension .swift in Sources */,
 				03E1895D28C4E699006E0732 /* HomeViewController.swift in Sources */,
 				03E1893B28C4E3BE006E0732 /* SceneDelegate.swift in Sources */,
 				03E1898228C50455006E0732 /* CDClinicDetail+CoreDataProperties.swift in Sources */,
 				03E1897428C4FDA5006E0732 /* LoginValidation.swift in Sources */,
-				03E1898528C50F61006E0732 /* Login+CoreDataClass.swift in Sources */,
-				03E1897B28C4FFC7006E0732 /* LoginData+CoreDataClass.swift in Sources */,
 				03E1896C28C4EB32006E0732 /* ApiServiceManager.swift in Sources */,
 				03E1896728C4EA6D006E0732 /* Constants.swift in Sources */,
+				0397577728C6EFBA0081CA56 /* LoginViewControllerExtension.swift in Sources */,
 				03E1897128C4FA98006E0732 /* PersistentStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +534,7 @@
 		};
 		03E1894D28C4E3BF006E0732 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD94CCE8806DB4C57D680B08 /* Pods-DoctorAppFinalDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +562,7 @@
 		};
 		03E1894E28C4E3BF006E0732 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F00D4A696736F268A2A2F30 /* Pods-DoctorAppFinalDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

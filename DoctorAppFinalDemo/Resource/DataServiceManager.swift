@@ -34,7 +34,7 @@ final class DataServiceManager{
         do{
             let jsonData = try? JSONSerialization.data(withJSONObject: params)
             print(jsonData)
-            ApiServiceManager.sharedInstance.postApiData(requestUrl: loginurl, requestBody: jsonData! ,resultType: LoginData.self) { (response ) in
+            ApiServiceManager.sharedInstance.postApiData(requestUrl: loginurl, requestBody: jsonData! ,resultType: LoginResponse.self) { (response ) in
                 print("Sucesss")
                 
                 let  data = response as? [String:Any]
@@ -136,8 +136,9 @@ final class DataServiceManager{
         do{
             let jsonData = try? JSONSerialization.data(withJSONObject: params)
             print(jsonData)
-            
-            ApiServiceManager.sharedInstance.postApiData(requestUrl: urlString!, requestBody: jsonData!, resultType: LoginData.self) { result in
+//
+//            ApiServiceManager.sharedInstance.postApiData(requestUrl: urlString!, requestBody: jsonData!, resultType: LoginData.self)
+            ApiServiceManager.sharedInstance.postApiData(requestUrl: urlString!, requestBody: jsonData!, resultType: LoginResponse.self) { result in
                 print(result)
                 
                 
@@ -212,17 +213,39 @@ final class DataServiceManager{
         
     }
     
-    //@escaping (Array<CDClinicDetail>?)
-    func getclinicdetails(completionHandler: @escaping (Array<ClinicDetail>) -> Void){
-        
+    
+    //func verifyotp( userName : String ,otp : String , completion : @escaping (_ result: Any? ) -> Void){
+    func getclinicdetails(completionHandler:@escaping(_ result: [ClinicDetail]?)-> Void)
+    
+    {
         let url = URL(string: "\(Constants.KURL.KStagingURL)\(Constants.KAPIPaths.KClinicList)")!
-        ApiServiceManager.sharedInstance.getApiData(requestUrl: url, resultType: ClinicDetail?.self) { result in
-            if let result = result {
-                print(result)
-                completionHandler(result as! Array<ClinicDetail>)
-            }
-            
-        }
-    }
+        ApiServiceManager.sharedInstance.getApiData(requestUrl: url, resultType: ClinicResponse.self){ result in
+                  if let result = result {
+       
+                      print(result.clinicDetails!)
+           
+            completionHandler(result.clinicDetails)
+
     
 }
+    }
+}
+}
+//   }
+//
+    
+    
+    
+   // {    //@escaping (Array<CDClinicDetail>?)
+//    func getclinicdetails(completionHandler: @escaping ([ClinicDetail]) -> Void){
+//
+//
+//        let url = URL(string: "\(Constants.KURL.KStagingURL)\(Constants.KAPIPaths.KClinicList)")!
+//        ApiServiceManager.sharedInstance.getApiData(requestUrl: url, resultType: ClinicDetail?.self) { result in
+//            if let result = result {
+//                print(result)
+//                completionHandler(result )
+//            }
+//
+//        }
+//    }
