@@ -1,0 +1,6 @@
+framework module Pods_DoctorAppFinalDemo {
+  umbrella header "Pods-DoctorAppFinalDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

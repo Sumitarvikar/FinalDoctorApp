@@ -22,18 +22,11 @@ struct Constants {
         static let KNo = "NO"
         static let KYes = "YES"
         static let KCancel = "Cancel"
-       
     }
     
-  
-    
     struct KKeyValues {
-//        static let KGoogleAPIKey = "AIzaSyBWd5XpzvWYEA2MEvfnq0e2vjU0wmSpGJ4"
-//        static let KZendeskAppId = "76a436bf93931e8d2c12dd6e0801863c1dbdb24d8494b8dc"
-//        static let KZendeskClientId =  "mobile_sdk_client_c551ddb20fcc6ee7d7d9"
-         static let KXAPPKEY = "52f9b73d"
-//        static let KRazorPayKey = "rzp_live_F5PcuZz9YT8QWp"
-//        static let KStageRazorPayKey = "rzp_test_qegac7PuQwyUdm"
+        
+        static let KXAPPKEY = "52f9b73d"
         static let KAuthorizationToken = "authorization_token"
         static let KNotificationToken = "notification_token"
         static let KVoIPPushNotificationToken = "voip_push_notification_token"
@@ -47,7 +40,6 @@ struct Constants {
         static let KHeaderContentType = "Content-Type"
         static let KHeaderApplicationJSON = "application/json"
         static let KHeaderAuthorization = "Authorization"
-//        static let KSyncPerPageCount = 500
         static let KSyncPerpageCount = "PerPageCount"
         static let KIsInitialSyncComplete = "isInitialSyncComplete"
         static let KCurrentDomainURL = "currentDomainUrl"
@@ -59,89 +51,50 @@ struct Constants {
         static let KDoctorSpecialization = "specialization"
         static let KDoctorQualifications = "doctorQualification"
         static let KDoctorProfileCompletedFlag = "doctorProfCompleteFlag"
-          static let KIsClinicExistFlag = "clinicExistsOnSignUp"
-//        static let KDoctorClinicExistsFlag = "ClinicExistsFlag"
-       static let KDoctorSignURL = "doctorSignURL"
-//        static let KDoctorProfileImageURL = "doctorImageURL"
-//        static let KPrimaryDoctorClinicdata = "clinics_primaryUser_data"
-//        static let KDoctorPreferredLanguges = "doctorPreferredLanguages"
-//        static let KDomainURL = "domainURL"
-    static let KUserId = "userId"
-  static let KEncodedAuthToken = "encodedAuthToken"
-//        static let KBlockOnlineApptMorning = "blockOnlineAppointmentsMorning"
-//        static let KBlockOnlineApptEvening = "blockOnlineAppointmentEvening"
-//        static let KShowGenericNameFirst = "showGenericNameFirst"
-//        static let KShowScheduledVaccine = "showScheduledVaccine"
-//        static let KShowRegionalTranslationofNumber = "showRegionalTranslationofNumber"
-//        static let KLetterHead = "letterHead"
-//        static let KTemplateFormat = "templateFormat"
-//        static let KPrescribeOralDropsInMl = "prescribeOralDropsInMl"
-//        static let KMessageKey = "message"
-//        static let KSuccessKey = "success"
-//        static let KChartTypeIAP = "IAP"
-//        static let KChartTypeDowns = "Down"
-//        static let KChartTypeFenton = "Fenton"
-//        static let KQualificationsList = "qualificationsList"
-//        static let KSpecializationsList = "specializationsList"
-//        static let KAutoDoseType_MgKgDay = "mg_kg_day"
-//        static let KAutoDoseType_MgKgDose = "weight"
-//        static let KAutoDoseType_FixedDose = "dose"
-//        static let KAutoDoseType_MgM2Dose = "mg_m2_dose"
-//        static let KAutoDoseType_MgM2Day = "mg_m2_day"
-//
-//        static let KStagingBucketName = "tpn-mobile-staging";
-//        static let KProductionBucketName = "tpn-mobile-production";
-//        static let KUTCDateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-//        static let MINUTES = "minutes";
-//        static let HOURS = "hours";
-//        static let DAYS = "days";
-//        static let WEEKS = "weeks";
-//        static let MONTHS = "months";
-//        static let YEARS = "years";
-//
-//        static let KDurationTypeMorning = "morning"
-//        static let KDurationTypeEvening = "evening"
-//        static let KDurationTypeAfternoon = "afternoon"
-//        static let KDurationTypeNight = "night"
-//
-//        static let MINUTE_SINGLE = "minute";
-//        static let HOUR_SINGLE = "hour";
-//        static let YEAR_SINGLE = "year";
-//        static let DAY_SINGLE = "day";
-//        static let WEEK_SINGLE = "week";
-//        static let MONTH_SINGLE = "month";
-
-    
+        static let KIsClinicExistFlag = "clinicExistsOnSignUp"
+        static let KDoctorSignURL = "doctorSignURL"
+        static let KUserId = "userId"
+        static let KEncodedAuthToken = "encodedAuthToken"
+        
+        
+        
     }
-//
+    
     
     struct KAPIPaths {
         static let KLoginAPI = "/sessions/sign_in"
         static let KVerifyLoginOTP = "/sessions/verify_otp"
         static let KClinicList = "/users/4/clinics"
+        static let KAPonmentUtl = "/appointments?clinic=%d&date=%@&doctor=%d&schedule=%@"
         
     }
     
     struct KURL {
         
-       static let KStagingURL = "https://api-stage.docterz.in"
-
+        static let KStagingURL = "https://api-stage.docterz.in"
+        
         static let KAPICurrentVersion = "application/vnd.thepediatricnetwork.v2+json"
         static let KAPILocal = "http://192.168.1.114:3000"
         static let KS3URL = "https://s3-ap-southeast-1.amazonaws.com/"
         static let KAppURLForForceUpdate = "https://apps.apple.com/us/app/docterz/id1413185878"
+        
+        
+     
     }
-//
+    
     struct KColor {
         static let AppThemeColor = UIColor(red: 0.9725, green: 0.6431, blue: 0.9765, alpha: 1)
+        static let ClinicCellColor = UIColor(red: (144/255.0), green: (194/255.0), blue: (241/255.0), alpha: 1.0)
+        static let PatientTableColor = UIColor(red: (230/255.0), green: (241/255.0), blue: (251/255.0), alpha: 1.0)
+        static let PatienCellBoarderColor = UIColor(red: (139/255.0), green: (195/255.0), blue: (245/255.0), alpha: 1.0)      //  rgb(139 195 245)      //  rgb(230 241 251)
     }
     
     struct KFonts{
         static let FontHelveticaNueue = "HelveticaNeue"
-
+        
     }
     
-  
+    
     
     
 }

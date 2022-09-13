@@ -11,11 +11,11 @@ import CoreData
 
 
 extension CDClinicDetail {
-
+    
     @nonobjc public class func fetchRequest() -> NSFetchRequest<CDClinicDetail> {
         return NSFetchRequest<CDClinicDetail>(entityName: "CDClinicDetail")
     }
-
+    
     @NSManaged public var id: Int32
     @NSManaged public var name: String?
     @NSManaged public var printHeaderHgt: Int32
@@ -32,9 +32,9 @@ extension CDClinicDetail {
     @NSManaged public var blockConfirmedAptMinutes: Int32
     @NSManaged public var shareMedicalHistoryAcrossClinic: Bool
     @NSManaged public var isActive: Bool
-
+    
 }
 
 extension CDClinicDetail : Identifiable {
-
+    
 }

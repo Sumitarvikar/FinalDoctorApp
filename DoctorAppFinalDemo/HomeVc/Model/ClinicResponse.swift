@@ -40,7 +40,6 @@ struct ClinicDetail: Codable {
         case shareDrugsAcrossClinic = "share_drugs_across_clinic"
         case allowThirdPartyAccess = "allow_third_party_access"
         case blockConfirmedApt = "block_confirmed_apt"
-       // case logo
         case sharePrescriptionAcrossClinic = "share_prescription_across_clinic"
         case blockConfirmedAptMinutes = "block_confirmed_apt_minutes"
         case shareMedicalHistoryAcrossClinic = "share_medical_history_across_clinic"

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DoctorAppFinalDemo" customModuleProvider="target">
             <connections>
                 <outlet property="ClinicListTableView" destination="CvB-Yy-W5m" id="0BE-Cm-Kqj"/>
+                <outlet property="activityIndicator" destination="aXv-ng-Wgs" id="1xK-dL-ZcE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,25 +20,44 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CvB-Yy-W5m">
-                    <rect key="frame" x="20" y="40" width="374" height="856"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CvB-Yy-W5m">
+                    <rect key="frame" x="20" y="65" width="374" height="797"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWb-xZ-USO">
+                    <rect key="frame" x="0.0" y="46" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="c8B-v8-WMu"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="aXv-ng-Wgs">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" systemColor="systemRedColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.90985971689224243" green="0.49652433395385742" blue="0.39488661289215088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CvB-Yy-W5m" secondAttribute="trailing" constant="20" id="AS0-OM-cZC"/>
-                <constraint firstItem="CvB-Yy-W5m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="cVr-Yl-BkD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CvB-Yy-W5m" secondAttribute="bottom" id="iAg-m1-HU8"/>
-                <constraint firstItem="CvB-Yy-W5m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ua3-ds-GcT"/>
+                <constraint firstItem="CvB-Yy-W5m" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="2A5-22-H1K"/>
+                <constraint firstItem="dWb-xZ-USO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IPg-rP-Xml"/>
+                <constraint firstItem="CvB-Yy-W5m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XHm-IA-rDj"/>
+                <constraint firstItem="dWb-xZ-USO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="2" id="khn-dU-zKI"/>
+                <constraint firstAttribute="trailing" secondItem="dWb-xZ-USO" secondAttribute="trailing" id="mZP-vP-EEm"/>
+                <constraint firstItem="CvB-Yy-W5m" firstAttribute="top" secondItem="dWb-xZ-USO" secondAttribute="bottom" constant="18" id="vDd-z7-mKR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CvB-Yy-W5m" secondAttribute="trailing" constant="20" id="wnz-aA-cdk"/>
             </constraints>
-            <point key="canvasLocation" x="133" y="98"/>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

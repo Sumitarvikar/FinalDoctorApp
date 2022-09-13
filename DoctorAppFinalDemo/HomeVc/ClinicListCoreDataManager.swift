@@ -8,7 +8,7 @@
 
 import Foundation
 
-class clinicListCoreSataManager{
+class clinicListCoreDataManager{
     
     
     func insertClinicListRecords(records: [ClinicDetail]) -> Bool {
@@ -17,13 +17,12 @@ class clinicListCoreSataManager{
             records.forEach { clinicListRecord in
                 let cdClinilist  = CDClinicDetail(context: privateManagedContext)
                 
-                
                 cdClinilist.name = clinicListRecord.name
                 cdClinilist.mobile = clinicListRecord.mobile
                 cdClinilist.email = clinicListRecord.email
                 cdClinilist.allowThirdPartyAccess = clinicListRecord.allowThirdPartyAccess ?? true
                 cdClinilist.blockConfirmedApt = clinicListRecord.blockConfirmedApt ??  true
-                cdClinilist.blockConfirmedAptMinutes = Int32(clinicListRecord.blockConfirmedAptMinutes!) 
+                cdClinilist.blockConfirmedAptMinutes = Int32(clinicListRecord.blockConfirmedAptMinutes!)
                 cdClinilist.id = Int32(clinicListRecord.id ?? 5)
                 cdClinilist.isActive = clinicListRecord.isActive ?? true
                 cdClinilist.isComplete = clinicListRecord.isComplete!
@@ -47,6 +46,7 @@ class clinicListCoreSataManager{
     func getClinicListRecords(completionHandler: @escaping ([ClinicDetail]?) -> Void) {
         let result = PersistentStorage.shared.fetchManagedObject(managedObject: CDClinicDetail.self)
         var list : [ClinicDetail] = []
+        
         result?.forEach({ (cdclinic) in
             list.append(cdclinic.convetToclinicDetail())
         })

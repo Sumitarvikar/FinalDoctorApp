@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-VariableFont_slnt,wght.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="childPatientTableViewCell" id="bdO-wu-aGP" customClass="childPatientTableViewCell" customModule="DoctorAppFinalDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bdO-wu-aGP" id="u5z-HU-dra">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D7L-jh-uzA">
+                        <rect key="frame" x="7" y="5" width="323" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sumit Arvikar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbG-Xi-3rw">
+                                <rect key="frame" x="8" y="5" width="180" height="16"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight : 15 Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqs-R9-Af0">
+                                <rect key="frame" x="8" y="26" width="180" height="16"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age - 24 yr 4 m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znZ-bh-2Ar">
+                                <rect key="frame" x="205" y="7" width="107" height="12"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   For Kids Plese Measure Vitals  at Recepsion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izv-Vn-SMF" customClass="PaddingLabel" customModule="DoctorAppFinalDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="42" width="323" height="20"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="i2r-gv-NGf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MotherAndChild" translatesAutoresizingMaskIntoConstraints="NO" id="2ei-CB-bBq">
+                                <rect key="frame" x="297" y="24" width="15" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Q0r-g5-Lmh"/>
+                                    <constraint firstAttribute="height" constant="16" id="vkR-u4-Jds"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2ei-CB-bBq" secondAttribute="trailing" constant="11" id="1Pd-B5-j15"/>
+                            <constraint firstItem="izv-Vn-SMF" firstAttribute="leading" secondItem="D7L-jh-uzA" secondAttribute="leading" id="2hb-Y2-ITS"/>
+                            <constraint firstAttribute="trailing" secondItem="izv-Vn-SMF" secondAttribute="trailing" id="39n-Jd-ZIb"/>
+                            <constraint firstItem="Zqs-R9-Af0" firstAttribute="leading" secondItem="mbG-Xi-3rw" secondAttribute="leading" id="3RD-Cb-22k"/>
+                            <constraint firstItem="znZ-bh-2Ar" firstAttribute="top" secondItem="D7L-jh-uzA" secondAttribute="top" constant="7" id="5K3-Ls-96h"/>
+                            <constraint firstItem="izv-Vn-SMF" firstAttribute="top" secondItem="2ei-CB-bBq" secondAttribute="bottom" constant="2" id="Ag2-uL-E3o"/>
+                            <constraint firstAttribute="trailing" secondItem="znZ-bh-2Ar" secondAttribute="trailing" constant="11" id="OwT-sl-dy5"/>
+                            <constraint firstAttribute="bottom" secondItem="izv-Vn-SMF" secondAttribute="bottom" id="Q9c-P0-cQr"/>
+                            <constraint firstAttribute="trailing" secondItem="mbG-Xi-3rw" secondAttribute="trailing" constant="135" id="SWZ-wU-hto"/>
+                            <constraint firstItem="mbG-Xi-3rw" firstAttribute="leading" secondItem="D7L-jh-uzA" secondAttribute="leading" constant="8" id="XUi-Hl-1NN"/>
+                            <constraint firstItem="Zqs-R9-Af0" firstAttribute="width" secondItem="mbG-Xi-3rw" secondAttribute="width" id="YTB-RF-78u"/>
+                            <constraint firstAttribute="height" constant="62" id="cyf-o7-gbc"/>
+                            <constraint firstAttribute="bottom" secondItem="znZ-bh-2Ar" secondAttribute="bottom" constant="43" id="eFe-wY-AzL"/>
+                            <constraint firstItem="mbG-Xi-3rw" firstAttribute="top" secondItem="D7L-jh-uzA" secondAttribute="top" constant="5" id="hFR-bF-Vr8"/>
+                            <constraint firstItem="Zqs-R9-Af0" firstAttribute="top" secondItem="mbG-Xi-3rw" secondAttribute="bottom" constant="5" id="ibS-Kz-i1b"/>
+                            <constraint firstAttribute="bottom" secondItem="mbG-Xi-3rw" secondAttribute="bottom" constant="41" id="lvJ-2X-dLA"/>
+                            <constraint firstItem="Zqs-R9-Af0" firstAttribute="height" secondItem="mbG-Xi-3rw" secondAttribute="height" id="m25-Kg-6yj"/>
+                            <constraint firstItem="znZ-bh-2Ar" firstAttribute="leading" secondItem="mbG-Xi-3rw" secondAttribute="trailing" constant="17" id="x98-d6-kLv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.5140716434" green="0.71701604129999996" blue="0.91267764569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="tintColor" red="0.5140716434" green="0.71701604129999996" blue="0.91267764569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="D7L-jh-uzA" secondAttribute="bottom" id="88u-yr-fYH"/>
+                    <constraint firstItem="D7L-jh-uzA" firstAttribute="leading" secondItem="u5z-HU-dra" secondAttribute="leading" constant="7" id="gS8-xY-xvC"/>
+                    <constraint firstAttribute="trailing" secondItem="D7L-jh-uzA" secondAttribute="trailing" constant="7" id="jaP-tV-orG"/>
+                    <constraint firstAttribute="bottom" secondItem="D7L-jh-uzA" secondAttribute="bottom" id="qBt-zD-3rN"/>
+                    <constraint firstItem="D7L-jh-uzA" firstAttribute="top" secondItem="u5z-HU-dra" secondAttribute="top" constant="5" id="v64-RL-cL4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="CZZ-6Z-S3H"/>
+            <connections>
+                <outlet property="childPatientAge" destination="znZ-bh-2Ar" id="bN9-xo-k9X"/>
+                <outlet property="childPatientInformationcell" destination="D7L-jh-uzA" id="hse-9y-Auj"/>
+                <outlet property="childPatientNote" destination="izv-Vn-SMF" id="ge9-Ed-sSH"/>
+                <outlet property="childPatientname" destination="mbG-Xi-3rw" id="UoI-8A-HWW"/>
+                <outlet property="childWeight" destination="Zqs-R9-Af0" id="TX1-a5-5Ma"/>
+            </connections>
+            <point key="canvasLocation" x="144.20289855072465" y="92.075892857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MotherAndChild" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

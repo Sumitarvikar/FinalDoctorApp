@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Appoinment" representedClassName="Appoinment" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="phoneno" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDAppoinmentDetails" representedClassName="CDAppoinmentDetails" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="String"/>
+        <attribute name="clinicID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="doctorID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="CDClinicDetail" representedClassName="CDClinicDetail" syncable="YES">
         <attribute name="allowThirdPartyAccess" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="blockConfirmedApt" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
@@ -8,7 +25,7 @@
         <attribute name="enableOnSearch" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="isComplete" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isComplete" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="landline" optional="YES" attributeType="String"/>
         <attribute name="mobile" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -19,6 +36,8 @@
         <attribute name="sharePrescriptionAcrossClinic" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
     <elements>
+        <element name="Appoinment" positionX="-54" positionY="270" width="128" height="89"/>
         <element name="CDClinicDetail" positionX="-54" positionY="153" width="128" height="269"/>
+        <element name="CDAppoinmentDetails" positionX="-54" positionY="270" width="128" height="164"/>
     </elements>
 </model>
